@@ -17,7 +17,7 @@ Automatically skips YouTube ads by clicking the "Skip Ad" button as soon as it a
 
 1. **Download or Clone this repository**
    ```bash
-   git clone <your-repo-url>
+   git clone <https://github.com/srinivasgolla600/youtube-ad-forward-chrome-extension-by-claude.git>
    ```
 
 2. **Open Chrome Extensions Page**
