@@ -45,8 +45,9 @@ function skipAdViaPlayerAPI() {
       const duration = video.duration;
       
       // Only skip if it's a short video (likely an ad, not the main content)
-      // Main videos are usually longer than 60 seconds
-      if (isFinite(duration) && duration > 0 && duration < 60) {
+      // Ads are usually under 3 minutes (180 seconds)
+      // Main videos are usually longer
+      if (isFinite(duration) && duration > 0 && duration < 180) {
         // Skip to extremely close to the end (0.01 seconds = 10 milliseconds)
         // This makes the ad end almost instantly after skip button appears
         video.currentTime = Math.max(0, duration - 0.01);
